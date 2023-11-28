@@ -127,6 +127,11 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} 1Block.AI. Built with love 💙.`,
       },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
