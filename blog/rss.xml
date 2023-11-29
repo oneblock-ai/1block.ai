@@ -4,7 +4,7 @@
         <title>1Block.AI Blog</title>
         <link>https://1block.ai/blog</link>
         <description>1Block.AI Blog</description>
-        <lastBuildDate>Wed, 29 Nov 2023 04:01:55 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Nov 2023 05:22:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Hello World @1Block.AI]]></title>
             <link>https://1block.ai/blog/welcome</link>
             <guid>https://1block.ai/blog/welcome</guid>
-            <pubDate>Wed, 29 Nov 2023 04:01:55 GMT</pubDate>
+            <pubDate>Wed, 29 Nov 2023 05:22:14 GMT</pubDate>
             <description><![CDATA[Why We Build 1Block.AI]]></description>
             <content:encoded><![CDATA[<div class="language-go codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-go codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">func</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">main</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    fmt</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">Println</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">"Hello World, @1Block.AI"</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-we-build-1blockai">Why We Build 1Block.AI<a href="https://1block.ai/blog/welcome#why-we-build-1blockai" class="hash-link" aria-label="Direct link to Why We Build 1Block.AI" title="Direct link to Why We Build 1Block.AI">​</a></h2>
@@ -37,7 +37,7 @@ These aspects need addressing in other components of the LLMOps platform. In ess
 <li><strong>Scalability and Portability</strong>: Supports serverless deployment, provides a unified solution for LLMs and generative AI applications to be deployed anywhere, from public cloud to on-premise servers.</li>
 <li><strong>Interoperability and maintainability</strong>: customizable and extendable with cloud-native and ML ecosystems.</li>
 </ul>
-<p><img loading="lazy" alt="1block-ai-architecture" src="https://1block.ai/assets/images/1block-ai-architecture-3ee89f32530c47ca9b12772dd5fc5c81.png" width="4688" height="3188" class="img_ev3q"></p>
+<p><img loading="lazy" alt="1block-ai-architecture" src="https://1block.ai/assets/images/1block-ai-architecture-08821b2183a27b412820050e3c2a88bc.png" width="4688" height="3188" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="join-us">Join Us<a href="https://1block.ai/blog/welcome#join-us" class="hash-link" aria-label="Direct link to Join Us" title="Direct link to Join Us">​</a></h2>
 <p>We are excited to build a community around the project. If you're interested, please join us on <a href="https://discord.gg/5BnNqC5ccB" target="_blank" rel="noopener noreferrer">Discord</a> or participate in <a href="https://github.com/oneblock-ai/oneblock/discussions" target="_blank" rel="noopener noreferrer">Github Discussions</a> to discuss or contribute the project. We look forward to collaborating with you. Merci!</p>]]></content:encoded>
             <category>1Block.AI</category>
