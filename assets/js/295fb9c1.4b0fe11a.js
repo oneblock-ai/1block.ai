@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_1_block_ai=self.webpackChunk_1_block_ai||[]).push([[797],{5469:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/1-block-ai","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
