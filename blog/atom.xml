@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1block.ai/blog"/>
     <subtitle>1BLOCK.AI Blog</subtitle>
-    <icon>https://1block.ai/img/favicon.png</icon>
+    <icon>https://1block.ai/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Hello World @1Block.AI]]></title>
         <id>https://1block.ai/blog/welcome</id>
