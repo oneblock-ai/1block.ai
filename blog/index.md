@@ -3,6 +3,7 @@ slug: welcome
 title: Hello World @1Block.AI
 authors: [guangbo]
 tags: [1Block.AI, LLMOps]
+date: 2024-01-01
 ---
 
 ```go
@@ -17,9 +18,9 @@ We are building **1Block.AI** to assist both developers and non-developers in un
 
 ### What is 1Block.AI
 
-**1Block.AI** is an open-source, cloud-native LLMOps platform that fosters innovation in LLMs and generative AI applications. It is built on top of cutting-edge technologies such as [Kubernetes](https://kubernetes.io/), [Ray.io](https://ray.io/), [LangChain](https://python.langchain.com/docs/get_started/introduction), etc., and designed to be cloud-agnostic and ML framework agnostic.
+**1Block.AI** is an open-source, cloud-native LLMOps platform that fosters innovation in LLMs and generative AI applications. It is built on top of cutting-edge technologies such as [Kubernetes](https://kubernetes.io/), [Ray.io](https://ray.io/), [vLLM](https://docs.vllm.ai/en/latest/index.html), etc., and designed to be cloud-agnostic and ML framework agnostic.
 
-Projects like Ray(also KubeRay), and LangChain are excellent open-source projects for ML lifecycle management and can be served as the core components of the LLMOps. For instance, Ray offers powerful distributed computing capabilities and a comprehensive ML computing framework, forming a powerful ML foundation for the platform. However, they lack a unified solution for multi-cluster management, multi-tenancy, cost control, data privacy protection, resource versioning, etc. 
+Projects like Ray(also KubeRay), and LangChain are excellent open-source projects for ML lifecycle management and can be served as the core components of the LLMOps. For instance, Ray offers powerful distributed computing capabilities and a comprehensive ML computing framework, forming a powerful ML foundation for the platform. However, they lack a unified solution for cluster management, multi-tenancy, cost control, data privacy protection, resource versioning, etc. 
 These aspects need addressing in other components of the LLMOps platform. In essence, we believe a user-friendly LLMOps platform should encompass:
 
 - **Cost-effectiveness and Data Privacy**: The platform must be open-source, feature a distributed architecture, and support private deployment.
@@ -33,7 +34,7 @@ These aspects need addressing in other components of the LLMOps platform. In ess
 - **Scalability and Portability**: Supports serverless deployment, provides a unified solution for LLMs and generative AI applications to be deployed anywhere, from public cloud to on-premise servers.
 - **Interoperability and maintainability**: customizable and extendable with cloud-native and ML ecosystems.
 
-![1block-ai-architecture](./2023-11-28-hello-world/1block-ai-architecture.png)
+![1block-ai-architecture](hello-world/1block-ai-architecture.png)
 
 ## Join Us
-We are excited to build a community around the project. If you're interested, please join us on [Discord](https://discord.gg/5BnNqC5ccB) or participate in [Github Discussions](https://github.com/oneblock-ai/oneblock/discussions) to discuss or contribute the project. We look forward to collaborating with you. Merci!
+We are excited to build a community around the project. If you're interested, please join us on [Discord](https://discord.gg/5BnNqC5ccB) or participate in [Github Discussions](https://github.com/llmos-ai/llmos/discussions) to discuss or contribute the project. We look forward to collaborating with you. Merci!

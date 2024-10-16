@@ -8,9 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '1Block.AI',
+  title: '1BLOCK.AI',
   tagline: 'An Unified Open Source Cloud-Native LLMOps Platform That Empowers Generative AI Applications Innovation',
-  favicon: 'img/icon.png',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://1block.ai',
@@ -20,7 +20,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '1block.ai', // Usually your GitHub org/user name.
+  organizationName: '1BLOCK.AI', // Usually your GitHub org/user name.
   projectName: '1block.ai', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -47,7 +47,9 @@ const config = {
             'https://github.com/oneblock-ai/1block.ai/tree/main/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            './src/css/custom.css',
+          ]
         },
       }),
     ],
@@ -56,24 +58,25 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logo/logo-vertical.png',
       navbar: {
-        title: '1Block.AI',
+        title: '1BLOCK.AI',
+        hideOnScroll: false,
         logo: {
-          alt: '1block Logo',
-          src: 'img/icon.png',
+          alt: '1BLOCK.AI Logo',
+          src: 'img/logo/logo-white.png',
         },
         items: [
           {
-            href: 'https://docs.1block.ai',
+            href: 'https://llmos.1block.ai/docs',
             label: 'Docs',
             position: 'right',
           },
           {to: '/blog', label: 'Blog', position: 'right'},
           {
-            href: 'https://github.com/oneblock-ai/oneblock',
-            label: 'GitHub',
+            href: 'https://github.com/llmos-ai/llmos',
+            label: 'Try LLMOS',
+            className: 'button button-bordered gap-6',
             position: 'right',
           },
         ],
@@ -85,8 +88,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Docs',
-                href: 'https://docs.1block.ai',
+                label: 'LLMOS Docs',
+                href: 'https://llmos.1block.ai/docs',
               },
             ],
           },
@@ -94,12 +97,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Github Discussions',
-                href: 'https://github.com/oneblock-ai/oneblock/discussions',
+                label: 'Discussions',
+                href: 'https://github.com/llmos-ai/llmos/discussions',
               },
               {
-                label: 'Discord',
-                href: 'https://discord.gg/5BnNqC5ccB',
+                label: 'Issues',
+                href: 'https://github.com/llmos-ai/llmos/issues',
               },
             ],
           },
@@ -112,7 +115,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/oneblock-ai/oneblock',
+                href: 'https://github.com/llmos-ai/llmos',
               },
             ],
           },
@@ -143,11 +146,11 @@ const config = {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'GTM-KK97PBTN',
-        anonymizeIP: true,
+        trackingID: 'G-G76DM1XFSQ',
       },
     ],
   ],
+  scripts: [],
 };
 
 export default config;

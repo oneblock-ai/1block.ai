@@ -17,26 +17,77 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+body{
+  /*font-family: none !important;*/
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #4e89e8;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.ob-subtitle {
-  padding: 0px 10px 10px 10px !important;
-  font-size: 1.0rem !important;
-  max-width: 800px !important;
-  margin: auto !important;
+.navbar--fixed-top{
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1020 !important;
 }
-.hero-bg {
-  /* background: linear-gradient(to bottom, #2d64da 70%, pink); */
-  background: linear-gradient(to bottom right, #1c459d, #7096e6);
+
+.navbar {
+  padding: .75rem 0;
+  justify-content: space-between;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+
+  .navbar__inner {
+    max-width: 1320px;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+
+}
+
+.button-bordered {
+  font-weight: var(--ifm-font-weight-semibold);
+  border: 1px solid white;
+}
+
+.button-white {
+  background-color: white !important;
+  color: #333 !important;
+  &:hover {
+    background-color: #f7f3f2 !important;
+  }
+}
+
+.button-large {
+  background: var(--ifm-color-primary-lighter);
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  &:hover {
+    background: var(--ifm-color-primary-light);
+    color: white;
+  }
+}
+
+.main-wrapper {
+  min-height: 500px;
 }
 
 .header-container.container {
-  padding: 13rem 0 !important;
-  /*background: linear-gradient(to bottom right, blue, pink);*/
+  width: 100%;
+  padding: 10rem 0rem 5rem 0rem !important;
   background-image: url('/img/pattern-lg-light.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -45,6 +96,19 @@
   -o-background-size: cover;
   background-size: cover;
   z-index: 100;
+  animation: zoomIn 17s infinite;
+  max-width: var(--ifm-container-width-xl);
+
+}
+
+/* Define the keyframes for the zoom-in effect */
+@keyframes zoomIn {
+  0% {
+    background-size: 100%; /* Start at normal size */
+  }
+  100% {
+    background-size: 140%; /* End with zoomed-in size */
+  }
 }
 
 .container {
@@ -66,19 +130,6 @@
   scale: 1.6;
 }
 
-.button-primary-hold {
-  background-color: #2151bb !important;
-  border-color: #2d64da !important;
-  color: white !important;
-  margin-top: 10px;
-}
-
-.button-primary-hold:hover {
-  background-color: #3a7bd5 !important;
-  color: white !important;
-  margin-top: 10px;
-}
-
 .navbar__link svg{
   display: none!important;
 }
@@ -87,6 +138,36 @@
   display: none!important;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+
 /*======= css for blogs ======*/
 img[alt=mlvsllm] {
   width: 200px;
@@ -94,3 +175,4 @@ img[alt=mlvsllm] {
   margin-left: auto;
   margin-right: auto;
 }
+

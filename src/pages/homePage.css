@@ -3,22 +3,24 @@
  * and scoped locally.
  */
 
-.heroBanner {
+.hero-banner {
   padding: 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  text-align: left;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
+  .hero-banner {
     padding: 2rem;
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero-bg {
+  background: linear-gradient(to bottom right, var(--ifm-color-primary-dark), var(--ifm-color-primary-lightest));
 }
 
+.brand-name {
+  font-weight: bold;
+}

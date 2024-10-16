@@ -1,0 +1,11 @@
+.contact-us-wrapper {
+    .icon-link {
+        svg {
+            color: black;
+        }
+    }
+}
+
+#message {
+    height: 7rem;
+}
