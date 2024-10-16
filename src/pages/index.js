@@ -4,7 +4,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
-import "./homePage.css";
+import "./homePage.scss";
 import Typing from "@site/src/components/Typing";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 function HomepageHeader() {

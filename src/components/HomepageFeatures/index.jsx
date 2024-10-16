@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import { CodeBlock } from 'react-code-blocks';
-import './feature.css';
+import './feature.scss';
 import Carousel from 'react-bootstrap/Carousel';
 import useBaseUrl from "@docusaurus/core/lib/client/exports/useBaseUrl";
 
@@ -75,7 +75,6 @@ function Feature({Svg, title, description, code, carousel, Img, classVal}) {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
-    console.log(selectedIndex)
     setIndex(selectedIndex);
   };
   return (
@@ -100,7 +99,7 @@ function Feature({Svg, title, description, code, carousel, Img, classVal}) {
 
             { carousel &&
               <div>
-                <Carousel activeIndex={index} onSelect={handleSelect}>
+                <Carousel activeIndex={index} onSelect={handleSelect} slide={true}>
                   {carousel.items.map((item, idx) => (
                     <Carousel.Item key={idx}>
                       {/*<CarouselImage text="First slide"/>*/}

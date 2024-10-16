@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: '1BLOCK.AI',
   tagline: 'An Unified Open Source Cloud-Native LLMOps Platform That Empowers Generative AI Applications Innovation',
-  favicon: 'img/favicon.png',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://1block.ai',
@@ -48,7 +48,7 @@ const config = {
         },
         theme: {
           customCss: [
-            './src/css/custom.css',
+            './src/css/custom.scss',
           ]
         },
       }),
@@ -149,6 +149,9 @@ const config = {
         trackingID: 'G-G76DM1XFSQ',
       },
     ],
+    [
+      'docusaurus-plugin-sass', {}
+    ]
   ],
   scripts: [],
 };

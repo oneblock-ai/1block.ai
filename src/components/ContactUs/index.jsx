@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ContactUs.css';
+import './ContactUs.scss';
 import Link from "@docusaurus/core/lib/client/exports/Link"; // Add styles as per your design
 import { Icon } from '@iconify/react';
 
