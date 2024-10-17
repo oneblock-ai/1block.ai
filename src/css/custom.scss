@@ -27,17 +27,11 @@ body{
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.navbar--fixed-top{
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 1020 !important;
-}
-
 .navbar {
   padding: .75rem 0;
   justify-content: space-between;
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  //background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 
   .navbar__inner {
     max-width: 1320px;
@@ -138,20 +132,8 @@ body{
   display: none!important;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.flex {
-  display: flex;
-}
-
 .items-center {
   align-items: center;
-}
-
-a {
-  text-decoration: none !important;
 }
 
 /*

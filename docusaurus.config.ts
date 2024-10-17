@@ -62,6 +62,7 @@ const config = {
       navbar: {
         title: '1BLOCK.AI',
         hideOnScroll: false,
+        style: 'dark',
         logo: {
           alt: '1BLOCK.AI Logo',
           src: 'img/logo/logo-white.png',
@@ -76,7 +77,7 @@ const config = {
           {
             href: 'https://github.com/llmos-ai/llmos',
             label: 'Try LLMOS',
-            className: 'button button-bordered gap-6',
+            className: 'button button-bordered margin-left--md',
             position: 'right',
           },
         ],
