@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_1_block_ai=self.webpackChunk_1_block_ai||[]).push([[9361],{57588:l=>{l.exports=JSON.parse('{"tags":[{"label":"1Block.AI","permalink":"/blog/tags/1-block-ai","count":2},{"label":"AI Infrastructure","permalink":"/blog/tags/ai-infrastructure","count":1},{"label":"LLMOps","permalink":"/blog/tags/llm-ops","count":1}]}')}}]);

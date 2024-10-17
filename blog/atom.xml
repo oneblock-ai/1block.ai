@@ -2,11 +2,105 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1block.ai/blog</id>
     <title>1BLOCK.AI Blog</title>
-    <updated>2024-01-01T00:00:00.000Z</updated>
+    <updated>2024-10-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1block.ai/blog"/>
     <subtitle>1BLOCK.AI Blog</subtitle>
     <icon>https://1block.ai/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Introducing LLMOS]]></title>
+        <id>https://1block.ai/blog/introducing-llmos</id>
+        <link href="https://1block.ai/blog/introducing-llmos"/>
+        <updated>2024-10-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[An Open-source Cloud-native AI Infrastructure Platform, Not Just GPUs]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="an-open-source-cloud-native-ai-infrastructure-platform-not-just-gpus">An Open-source Cloud-native AI Infrastructure Platform, Not Just GPUs<a href="https://1block.ai/blog/introducing-llmos#an-open-source-cloud-native-ai-infrastructure-platform-not-just-gpus" class="hash-link" aria-label="Direct link to An Open-source Cloud-native AI Infrastructure Platform, Not Just GPUs" title="Direct link to An Open-source Cloud-native AI Infrastructure Platform, Not Just GPUs">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-llmos">What is LLMOS?<a href="https://1block.ai/blog/introducing-llmos#what-is-llmos" class="hash-link" aria-label="Direct link to What is LLMOS?" title="Direct link to What is LLMOS?">​</a></h2>
+<p>We are thrilled to announce the launch of <strong>LLMOS</strong>, an open-source cloud-native AI infrastructure platform designed to simplify the management of AI applications and Large Language Models (LLMs). With LLMOS, organizations can effortlessly deploy, scale, and operate machine learning workflows while reducing the complexity often associated with AI development and operations.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-we-built-llmos">Why We Built LLMOS<a href="https://1block.ai/blog/introducing-llmos#why-we-built-llmos" class="hash-link" aria-label="Direct link to Why We Built LLMOS" title="Direct link to Why We Built LLMOS">​</a></h2>
+<p>AI and LLMs are transforming industries, but managing the infrastructure needed for AI at scale can be challenging. We built <strong>LLMOS</strong> to break down these barriers, providing a platform that makes it easier for developers, data scientists, and IT teams to focus on what really matters—building and deploying powerful AI solutions. With its cloud-native foundation, LLMOS integrates smoothly with existing infrastructure, offering a flexible, scalable, and user-friendly way to manage AI projects and tasks.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-features-of-llmos">Key Features of LLMOS<a href="https://1block.ai/blog/introducing-llmos#key-features-of-llmos" class="hash-link" aria-label="Direct link to Key Features of LLMOS" title="Direct link to Key Features of LLMOS">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-seamless-notebook-integration">1. Seamless Notebook Integration<a href="https://1block.ai/blog/introducing-llmos#1-seamless-notebook-integration" class="hash-link" aria-label="Direct link to 1. Seamless Notebook Integration" title="Direct link to 1. Seamless Notebook Integration">​</a></h3>
+<p>LLMOS integrates with popular notebook environments such as <strong>Jupyter</strong>, <strong>VSCode</strong>, and <strong>RStudio</strong>, enabling data scientists and developers to work efficiently in familiar tools without complicated setup.</p>
+<p><img decoding="async" loading="lazy" alt="jupyter-notebook" src="https://1block.ai/assets/images/jupyter-notebook-145dc8640e7880fbc46b580892dad74b.png" width="2178" height="1636" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-modelservice-for-llm-deployment">2. ModelService for LLM Deployment<a href="https://1block.ai/blog/introducing-llmos#2-modelservice-for-llm-deployment" class="hash-link" aria-label="Direct link to 2. ModelService for LLM Deployment" title="Direct link to 2. ModelService for LLM Deployment">​</a></h3>
+<p>Deploying LLMs is now simpler with <strong>ModelService</strong>, which provides <strong>OpenAI-compatible APIs</strong> for serving large language models. This feature makes it easy to deploy, scale, and use LLMs in real-world applications.</p>
+<p><img decoding="async" loading="lazy" alt="model-service" src="https://1block.ai/assets/images/model-service-1790927592b7c18804bc29bf8027f50c.png" width="3012" height="864" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-machine-learning-cluster">3. Machine Learning Cluster<a href="https://1block.ai/blog/introducing-llmos#3-machine-learning-cluster" class="hash-link" aria-label="Direct link to 3. Machine Learning Cluster" title="Direct link to 3. Machine Learning Cluster">​</a></h3>
+<p>The <strong>Machine Learning Cluster</strong> supports distributed computing, offering parallel processing and access to leading AI libraries. This feature enhances the performance of machine learning workflows, especially for large-scale models and datasets.</p>
+<p><img decoding="async" loading="lazy" alt="machine-learning-cluster" src="https://1block.ai/assets/images/ml-cluster-6e87c427e6787d2036b93ad99e75ecc2.png" width="3838" height="1860" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-scalable-storage-with-rook-ceph">4. Scalable Storage with Rook Ceph<a href="https://1block.ai/blog/introducing-llmos#4-scalable-storage-with-rook-ceph" class="hash-link" aria-label="Direct link to 4. Scalable Storage with Rook Ceph" title="Direct link to 4. Scalable Storage with Rook Ceph">​</a></h3>
+<p><strong>Rook Ceph</strong> provides distributed and fault-tolerant storage system for LLMOS, offering robust, scalable block and filesystem storage that adapts to the needs of AI and LLM applications.</p>
+<p><img decoding="async" loading="lazy" alt="roo-ceph" src="https://1block.ai/assets/images/rook-ceph-de00726819991f09772f8822f6a4bd8f.png" width="3188" height="1752" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-extensibility-with-managed-addons">5. Extensibility with Managed Addons<a href="https://1block.ai/blog/introducing-llmos#5-extensibility-with-managed-addons" class="hash-link" aria-label="Direct link to 5. Extensibility with Managed Addons" title="Direct link to 5. Extensibility with Managed Addons">​</a></h3>
+<p>LLMOS introduces <strong>ManagedAddon</strong> support, allowing users to extend the platform with system and custom add-ons. This gives organizations more flexibility to tailor the platform to their specific needs.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6-simplified-user-and-api-key-management">6. Simplified User and API Key Management<a href="https://1block.ai/blog/introducing-llmos#6-simplified-user-and-api-key-management" class="hash-link" aria-label="Direct link to 6. Simplified User and API Key Management" title="Direct link to 6. Simplified User and API Key Management">​</a></h3>
+<p>The platform features an intuitive interface for managing <strong>users</strong> and <strong>API keys</strong>, making access control and resource allocation easier for administrators.</p>
+<p><img decoding="async" loading="lazy" alt="api-keys" src="https://1block.ai/assets/images/api-keys-74bd66c1fc05c2c1183c2f675e48fcab.png" width="3468" height="1210" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="7-role-based-access-control-rbac-and-role-templates">7. Role-Based Access Control (RBAC) and Role Templates<a href="https://1block.ai/blog/introducing-llmos#7-role-based-access-control-rbac-and-role-templates" class="hash-link" aria-label="Direct link to 7. Role-Based Access Control (RBAC) and Role Templates" title="Direct link to 7. Role-Based Access Control (RBAC) and Role Templates">​</a></h3>
+<p>LLMOS offers enhanced <strong>Role Templates</strong> and <strong>RBAC</strong>, helping administrators assign permissions and manage security across teams and projects with ease.</p>
+<p><img decoding="async" loading="lazy" alt="role-templates" src="https://1block.ai/assets/images/role-templates-8569a56da12684b91b6bc025f4a72881.png" width="3012" height="946" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="8-node-management">8. Node Management<a href="https://1block.ai/blog/introducing-llmos#8-node-management" class="hash-link" aria-label="Direct link to 8. Node Management" title="Direct link to 8. Node Management">​</a></h3>
+<p><strong>Node Management</strong> is available directly through the LLMOS dashboard, allowing for better visibility and control over system resources, enhancing operational efficiency.</p>
+<p><img decoding="async" loading="lazy" alt="nodes" src="https://1block.ai/assets/images/nodes-4837943f74e59a55d62dc9a81d772610.png" width="3114" height="1054" class="img_ev3q">
+<img decoding="async" loading="lazy" alt="node-management" src="https://1block.ai/assets/images/node-management-98fdba71aac3b6e5e2f9e6f289d5cdaf.png" width="3126" height="1388" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="9-bootstrap-and-installation-support">9. Bootstrap and Installation Support<a href="https://1block.ai/blog/introducing-llmos#9-bootstrap-and-installation-support" class="hash-link" aria-label="Direct link to 9. Bootstrap and Installation Support" title="Direct link to 9. Bootstrap and Installation Support">​</a></h3>
+<p>Setting up LLMOS has been simplified through easy-to-use <strong><a href="https://llmos.1block.ai/docs/installation/" target="_blank" rel="noopener noreferrer">installation script</a></strong> and comprehensive <strong><a href="https://llmos.1block.ai/docs/installation/configurations" target="_blank" rel="noopener noreferrer">bootstrap configurations</a></strong>, making it easy for users to get up and running.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="10-easy-upgrades">10. Easy Upgrades<a href="https://1block.ai/blog/introducing-llmos#10-easy-upgrades" class="hash-link" aria-label="Direct link to 10. Easy Upgrades" title="Direct link to 10. Easy Upgrades">​</a></h3>
+<p>With streamlined upgrade capabilities, LLMOS ensures that you can quickly adopt new features and improvements with minimal disruption.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="llmos-use-cases">LLMOS Use Cases<a href="https://1block.ai/blog/introducing-llmos#llmos-use-cases" class="hash-link" aria-label="Direct link to LLMOS Use Cases" title="Direct link to LLMOS Use Cases">​</a></h2>
+<ul>
+<li><strong>AI Research &amp; Development:</strong> Simplify the management of LLMs and AI infrastructure, allowing researchers to focus on innovation rather than operational overhead.</li>
+<li><strong>Enterprise AI Solutions:</strong> Streamline the deployment of AI applications with scalable infrastructure, making it easier to manage models, storage, and resources across multiple teams.</li>
+<li><strong>Data Science Workflows:</strong> With notebook integration and powerful cluster computing, LLMOS is ideal for data scientists looking to run complex experiments at scale.</li>
+<li><strong>AI-Driven Products:</strong> From chatbots to automated content generation, LLMOS simplifies the process of deploying LLM-based products that can serve millions of users and scale up horizontally.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-with-llmos">Getting Started with LLMOS<a href="https://1block.ai/blog/introducing-llmos#getting-started-with-llmos" class="hash-link" aria-label="Direct link to Getting Started with LLMOS" title="Direct link to Getting Started with LLMOS">​</a></h2>
+<p>Ready to get started with <strong>LLMOS</strong>? Our <a href="https://llmos.1block.ai/docs/" target="_blank" rel="noopener noreferrer">detailed documentation</a> covers everything from installation to advanced features. Whether you’re a developer, data scientist, or system administrator, you’ll find LLMOS easy to set up and use, below is the quick-start guideline.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Make sure your nodes meet the <a href="https://llmos.1block.ai/docs/installation/requirements" target="_blank" rel="noopener noreferrer">requirements</a> before proceeding.</p></div></div>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="installation-script">Installation Script<a href="https://1block.ai/blog/introducing-llmos#installation-script" class="hash-link" aria-label="Direct link to Installation Script" title="Direct link to Installation Script">​</a></h5>
+<p>LLMOS can be installed to a bare-metal server or a virtual machine. To bootstrap a <strong>new cluster</strong>, follow the steps below:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>To monitor installation logs, run <code>journalctl -u llmos -f</code>.</p>
+<p>If your environment requires internet access through a proxy, set the <code>HTTP_PROXY</code> and <code>HTTPS_PROXY</code> environment variables before running the installation script:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">export HTTP_PROXY=http://proxy.example.com:8080</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">export HTTPS_PROXY=http://proxy.example.com:8080</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">export NO_PROXY=127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16 # Replace the CIDRs with your own</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started">Getting Started<a href="https://1block.ai/blog/introducing-llmos#getting-started" class="hash-link" aria-label="Direct link to Getting Started" title="Direct link to Getting Started">​</a></h5>
+<p>After installing LLMOS, access the dashboard by navigating to <code>https://&lt;server-ip&gt;:8443</code> in your web browser.</p>
+<ol>
+<li>
+<p>LLMOS will create a default <code>admin</code> user with a randomly generated password. To retrieve the password, run the following command on the <strong>cluster-init</strong> node:</p>
+<div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl get secret --namespace llmos-system llmos-bootstrap-passwd -o go-template='{{.data.password|base64decode}}{{"\n"}}'</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><img decoding="async" loading="lazy" alt="welcome-login" src="https://1block.ai/assets/images/welcome-login-f54ce42ab9e3cd39a8e05dc9f8257089.png" width="2770" height="1494" class="img_ev3q"></p>
+</li>
+<li>
+<p>Upon logging in, you will be redirected to the setup page. Configure the following:</p>
+</li>
+</ol>
+<ul>
+<li>Set a <strong>new password</strong> for the admin user (strong passwords are recommended).</li>
+<li>Configure the <strong>server URL</strong> that all other nodes in your cluster will use to connect.
+<img decoding="async" loading="lazy" alt="welcome-config" src="https://1block.ai/assets/images/welcome-config-fed99f36b5282886bfd7553c8a099b57.png" width="3138" height="1642" class="img_ev3q"></li>
+</ul>
+<ol>
+<li>After setup, you will be redirected to the home page where you can start using LLMOS.
+<img decoding="async" loading="lazy" alt="home-page" src="https://1block.ai/assets/images/home-page-bd27b772850f0c4045d751d5ac234759.png" width="2738" height="1030" class="img_ev3q"></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="more-examples">More Examples<a href="https://1block.ai/blog/introducing-llmos#more-examples" class="hash-link" aria-label="Direct link to More Examples" title="Direct link to More Examples">​</a></h2>
+<p>To learn more about using LLMOS, explore the following resources:</p>
+<ul>
+<li><a href="https://llmos.1block.ai/docs/user_guide/llm_management/serve" target="_blank" rel="noopener noreferrer">Chat with LLMOS Models</a></li>
+<li><a href="https://llmos.1block.ai/docs/user_guide/llm_management/notebooks#create-a-notebook" target="_blank" rel="noopener noreferrer">Creating a Jupyter Notebook</a></li>
+<li><a href="https://llmos.1block.ai/docs/user_guide/ml_clusters" target="_blank" rel="noopener noreferrer">Creating a Machine Learning Cluster</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="join-us">Join Us<a href="https://1block.ai/blog/introducing-llmos#join-us" class="hash-link" aria-label="Direct link to Join Us" title="Direct link to Join Us">​</a></h2>
+<p>We are excited to build a community around the project. If you're interested, please join us on <a href="https://discord.gg/5BnNqC5ccB" target="_blank" rel="noopener noreferrer">Discord</a> or participate in <a href="https://github.com/llmos-ai/llmos/discussions" target="_blank" rel="noopener noreferrer">Github Discussions</a> to discuss or contribute the project. If you need to contact us, please reach out to us via <a href="https://1block.ai/contact-us" target="_blank" rel="noopener noreferrer">here</a>. We look forward to collaborating with you, thanks!</p>]]></content>
+        <author>
+            <name>Guangbo Chen</name>
+            <email>guangbo@1block.ai</email>
+            <uri>https://github.com/guangbochen</uri>
+        </author>
+        <category label="1Block.AI" term="1Block.AI"/>
+        <category label="AI Infrastructure" term="AI Infrastructure"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello World @1Block.AI]]></title>
         <id>https://1block.ai/blog/welcome</id>
@@ -41,6 +135,7 @@ These aspects need addressing in other components of the LLMOps platform. In ess
 <p>We are excited to build a community around the project. If you're interested, please join us on <a href="https://discord.gg/5BnNqC5ccB" target="_blank" rel="noopener noreferrer">Discord</a> or participate in <a href="https://github.com/llmos-ai/llmos/discussions" target="_blank" rel="noopener noreferrer">Github Discussions</a> to discuss or contribute the project. We look forward to collaborating with you. Merci!</p>]]></content>
         <author>
             <name>Guangbo Chen</name>
+            <email>guangbo@1block.ai</email>
             <uri>https://github.com/guangbochen</uri>
         </author>
         <category label="1Block.AI" term="1Block.AI"/>
