@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './TypingEffect.css'; // Import the CSS for styling
 
 const TypingEffect = () => {
-  const strings = ["Data Scientist.", "ML Developers.", "AI Infrastructure Builders.", "Machine Learning."];
+  const strings = ["Data Scientist.", "ML Developers.", "LLMOps.", "Machine Learning."];
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
