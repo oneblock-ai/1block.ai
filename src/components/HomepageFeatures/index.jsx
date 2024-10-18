@@ -8,7 +8,7 @@ const FeatureList = [
   {
     id: 0,
     title: 'Easy to Install',
-    classVal: "col col--12 hero shadow--lw",
+    classVal: "row hero shadow--tl padding--xl margin-top--xl",
     description: (
       <>
         Works out of the box on both x86_64 and ARM64 architectures for a smooth installation experience.
@@ -26,8 +26,8 @@ curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLM
   },
   {
     id: 1,
-    title: 'Infrastructure, LLM & Application Lifecycle Management',
-    classVal: "col col--12 hero hero--dark",
+    title: 'Unified Infrastructure, LLM & Application Lifecycle Management',
+    classVal: "row hero hero--dark padding-vert--xl padding-horiz--lg margin-vert--lg",
     description: (
       <>
         Offers a unified interface that makes it easy for both developers and non-developers to manage infrastructure, ML clusters, models, and user workloads.
@@ -53,7 +53,7 @@ curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLM
   {
     id: 2,
     title: 'Cloud-Agnostic & ML Framework-Agnostic',
-    classVal: "col col--12 hero shadow--lw",
+    classVal: "row hero shadow--lw padding--xl margin-vert--lg",
     Svg: require('@site/static/img/multi-cloud.svg').default,
     description: (
       <>
@@ -63,8 +63,8 @@ curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLM
   },
   {
     id: 3,
-    title: 'Private, and Ideal for Edge & Branch',
-    classVal: "col col--12 hero hero--primary",
+    title: 'Private Deployment, Ideal for Edge & Branch',
+    classVal: "row hero hero--primary padding--xl margin-vert--lg",
     Svg: require('@site/static/img/feature_branch.svg').default,
     description: (
       <>
@@ -84,47 +84,43 @@ function Feature({title, description, code, carousel, Svg, Img, classVal, id}) {
     autoplay: true,
   };
   return (
-    <div className="margin-vert--md">
-      <div className={classVal}>
-        <div className="row">
-          <div className="col col--4">
-            <h2 className="hero__title feature-title">{title}</h2>
-            <p className="hero__subtitle feature-lead">{description}</p>
+    <div className={classVal}>
+      <div className="col col--4">
+        <h2 className="hero__title feature-title">{title}</h2>
+        <p className="hero__subtitle feature-lead">{description}</p>
+      </div>
+
+      <div className="col col--8 feature-img-wrapper">
+        {code &&
+          <CodeBlock
+            text={code}
+            language="shell"
+            showLineNumbers={false}
+            theme="docuras"
+            className="code-block"
+          />
+        }
+
+        {carousel &&
+          <div className="carousel-wrapper">
+            <Slider {...slickSettings}>
+              {carousel.items.map((item, idx) => (
+                <div key={idx} className="slider">
+                  <img src={useBaseUrl(item.file)} alt={`Slide Img ${idx + 1}`}
+                       className="d-block w-100 img-fluid"/>
+                </div>
+              ))}
+            </Slider>
           </div>
+        }
 
-          <div className="feature-img-wrapper col col--8">
-            {code &&
-              <CodeBlock
-                text={code}
-                language="shell"
-                showLineNumbers={false}
-                theme="docuras"
-              />
-            }
+        {Svg &&
+          <Svg className="feature-img" role="img"/>
+        }
 
-            {carousel &&
-              <div className="carousel-wrapper">
-                <Slider {...slickSettings}>
-                    {carousel.items.map((item, idx) => (
-                      <div key={idx} className="slider">
-                        <img src={useBaseUrl(item.file)} alt={`Slide Img ${idx + 1}`}
-                             className="d-block w-100 img-fluid"/>
-                      </div>
-                    ))}
-                </Slider>
-              </div>
-            }
-
-            {Svg &&
-              <Svg className="feature-img" role="img"/>
-            }
-
-            {Img &&
-              <img src={Img} className="feature-img" role="img" id={Img}/>
-            }
-
-          </div>
-        </div>
+        {Img &&
+          <img src={Img} className="feature-img" role="img" id={Img}/>
+        }
       </div>
     </div>
   );
@@ -134,10 +130,10 @@ export default function HomepageFeatures() {
   return (
     <section className="features-wrapper text-center">
       <div className="container container-lg">
-        <h1 className="text--center margin-vert--md">
+        <h1 className="text--center padding-top--xl">
           A Full Private Platform. Not Just GPUs
         </h1>
-        <div className="row">
+        <div className="container">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

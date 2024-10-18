@@ -17,10 +17,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-body{
-  /*font-family: none !important;*/
-}
-
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #4e89e8;
@@ -31,7 +27,6 @@ body{
   padding: .75rem 0;
   justify-content: space-between;
   --bs-bg-opacity: 1;
-  //background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 
   .navbar__inner {
     max-width: 1320px;
@@ -55,6 +50,7 @@ body{
 .button-bordered {
   font-weight: var(--ifm-font-weight-semibold);
   border: 1px solid white;
+  margin-left: .5rem;
 }
 
 .button-white {
@@ -79,22 +75,6 @@ body{
   min-height: 500px;
 }
 
-.header-container.container {
-  width: 100%;
-  padding: 10rem 0rem 5rem 0rem !important;
-  background-image: url('/img/pattern-lg-light.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 100;
-  animation: zoomIn 17s infinite;
-  max-width: var(--ifm-container-width-xl);
-
-}
-
 /* Define the keyframes for the zoom-in effect */
 @keyframes zoomIn {
   0% {
@@ -103,10 +83,6 @@ body{
   100% {
     background-size: 140%; /* End with zoomed-in size */
   }
-}
-
-.container {
-  padding: 3rem 0 !important;
 }
 
 .footer .container {
@@ -120,17 +96,16 @@ body{
   z-index: 100;
 }
 
-.features_src-components-HomepageFeatures-styles-module .col:nth-child(3) .featureSvg_src-components-HomepageFeatures-styles-module {
-  scale: 1.6;
-}
-
-.navbar__link svg{
-  display: none!important;
+.navbar__link {
+  svg {
+    display: none!important;
+  }
 }
 
 .footer__link-item svg{
   display: none!important;
 }
+
 
 .items-center {
   align-items: center;
@@ -143,9 +118,21 @@ body{
 .flex-equal > * {
   flex: 1;
 }
+
 @media (min-width: 768px) {
   .flex-md-equal > * {
     flex: 1;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .button-bordered {
+    margin-left: 0rem;
+  }
+
+  .menu__list-item > a > svg {
+    display: none!important;
   }
 }
 

@@ -6,9 +6,9 @@ import './ContactUs.scss';
 
 const ContactUs = () => {
   return (
-    <div className="contact-us-wrapper container">
+    <div className="contact-us-wrapper container padding--xl">
       <div className="row">
-        <div className="col col--6">
+        <div className="col col--12">
           <h1>Get in touch</h1>
           <p>
             If you are interested in contacting us, please book a meeting with us, and we will get in touch as early as
