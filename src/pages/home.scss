@@ -1,0 +1,57 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.hero-banner {
+  padding: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+@media screen and (max-width: 996px) {
+  .hero-banner {
+    padding: 2rem;
+  }
+}
+
+.hero-bg {
+  background: linear-gradient(to bottom right, var(--ifm-color-primary-dark), var(--ifm-color-primary-lightest));
+}
+
+.brand-name {
+  font-weight: bold;
+}
+
+.header-container{
+  width: 100%;
+  padding: 8.5rem 2.5rem !important;
+  background-image: url('/img/pattern-lg-light.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 100;
+  animation: zoomIn 17s infinite;
+  max-width: var(--ifm-container-width-xl);
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .header-container {
+    padding: 2rem .25rem !important;
+  }
+
+  #typing-wrapper {
+    display: none;
+  }
+
+  #landing-img {
+    padding-top: 4rem;
+  }
+}
+

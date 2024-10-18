@@ -34,10 +34,9 @@ const TypingEffect = () => {
   }, [currentCharIndex, isDeleting, currentStringIndex, strings]);
 
   return (
-    <div>
-      <span id="typing">{strings[currentStringIndex].substring(0, currentCharIndex)}</span>
-      <span className="cursor"></span>
-    </div>
+    <span id="typing-wrapper">
+      For <span id="typing">{strings[currentStringIndex].substring(0, currentCharIndex)}</span> <span className="cursor"></span>
+    </span>
   );
 };
 

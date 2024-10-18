@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '1BLOCK.AI',
-  tagline: 'An Unified Open Source Cloud-Native LLMOps Platform That Empowers Generative AI Applications Innovation',
+  tagline: 'An Unified Open-Source Cloud-Native Platform That Empowers Generative AI Applications Innovation',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -77,7 +77,7 @@ const config = {
           {
             href: 'https://github.com/llmos-ai/llmos',
             label: 'Try LLMOS',
-            className: 'button button-bordered margin-left--md',
+            className: 'button button-bordered',
             position: 'right',
           },
         ],

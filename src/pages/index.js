@@ -7,19 +7,19 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Typing from "@site/src/components/Typing";
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import "./homePage.scss";
+import "./home.scss";
 function HomepageHeader() {
   return (
     <header className="hero hero--primary hero-bg hero-banner">
-      <div className="header-container container">
+      <div className="container header-container">
         <div className="row">
           <div className="col col--6">
             <Heading as="h1" className="hero__title">
-              Open Source, Cloud-Native AI Infrastructure Platform For <Typing/>
+              Open-source, Cloud Native AI Infrastructure Platform <Typing />
             </Heading>
             <div className="hero-subtitle home-subtitle">
               <p className="margin-bottom--md">
-                Fosters innovation in LLMs and generative AI applications. Built on open-source, cutting-edge technologies like Kubernetes and Ray.io, it is designed to be cloud-agnostic and ML framework agnostic.
+                Accelerates AI application development and simplifies the management of large language models (LLMs). Built on open-source technologies like Kubernetes and Ray, it is cloud-agnostic and works with any ML framework.
               </p>
               <div className="flex items-center">
                 <Link
@@ -39,7 +39,7 @@ function HomepageHeader() {
 
           </div>
 
-          <div className="col col--6">
+          <div className="col col--6" id="landing-img">
             <img src={useBaseUrl('/img/gpu-stack1.webp')} alt="w-logo"/>
           </div>
         </div>
@@ -52,13 +52,22 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - An Cloud-Native LLMOps Platform`}
-      description="An Unified Open Source Cloud-Native LLMOps Platform"
+      title={`${siteConfig.title} - Cloud-Native AI Infra Platform`}
+      description="An Unified Open-Source Cloud-Native AI Infrastructure Platform"
     >
       <HomepageHeader/>
       <main>
         <HomepageFeatures/>
+        <div className="container">
+          <div className="row padding--lg">
+            <div className="col col--offset-4 col--4">
+              <a className="button button--outline button--primary button--block" href="/contact-us">
+                Talk with us
+              </a>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
-  );
+);
 }
