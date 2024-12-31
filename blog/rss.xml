@@ -4,10 +4,88 @@
         <title>1BLOCK.AI Blog</title>
         <link>https://1block.ai/blog</link>
         <description>1BLOCK.AI Blog</description>
-        <lastBuildDate>Thu, 17 Oct 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 31 Dec 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[LLMOS v0.2 - Simplify AI Management, Unlock GPU Potential]]></title>
+            <link>https://1block.ai/blog/introducing-llmos-v02</link>
+            <guid>https://1block.ai/blog/introducing-llmos-v02</guid>
+            <pubDate>Tue, 31 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[🚀 Introducing LLMOS v0.2]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-introducing-llmos-v02"><strong>🚀 Introducing LLMOS v0.2</strong><a href="https://1block.ai/blog/introducing-llmos-v02#-introducing-llmos-v02" class="hash-link" aria-label="Direct link to -introducing-llmos-v02" title="Direct link to -introducing-llmos-v02">​</a></h2>
+<p><strong>LLMOS</strong> is a cloud-native tool designed to <strong>accelerate AI application development</strong> and <strong>simplify the management of large language models (LLMs)</strong>. It supports deployment on both <strong>public clouds</strong> and <strong>private GPU servers</strong>, enabling you to easily deploy private AI models, scale machine learning workflows, and reduce the complexity of development and operations.</p>
+<p>With the increasing demand for GPU virtualization (vGPU) and resource utilization, the <strong>v0.2</strong> release prioritizes features like <strong>vGPU management</strong>, <strong>cluster and GPU resource monitoring</strong>, and <strong>alerting</strong> to maximize GPU management efficiency and utilization.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-key-features"><strong>🌟 Key Features</strong><a href="https://1block.ai/blog/introducing-llmos-v02#-key-features" class="hash-link" aria-label="Direct link to -key-features" title="Direct link to -key-features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-more-efficient-gpu-management"><strong>1. More Efficient GPU Management</strong><a href="https://1block.ai/blog/introducing-llmos-v02#1-more-efficient-gpu-management" class="hash-link" aria-label="Direct link to 1-more-efficient-gpu-management" title="Direct link to 1-more-efficient-gpu-management">​</a></h3>
+<p>Introducing support for <strong>NVIDIA Virtual GPU (vGPU)</strong>, allowing you to choose between virtual or full GPUs based on your needs. This accelerates resource allocation and optimizes the utilization of GPU VRAM and CUDA cores.</p>
+<table><thead><tr><th>GPU Model</th><th>Support</th><th>Architecture</th></tr></thead><tbody><tr><td>A100, A200</td><td>✅</td><td>NVIDIA Ampere</td></tr><tr><td>H100, H200</td><td>✅</td><td>NVIDIA Hopper</td></tr><tr><td>Tesla T4/T4G</td><td>✅</td><td>NVIDIA Turing</td></tr><tr><td>30x/40x Series</td><td>✅</td><td>Ada Lovelace/Ampere</td></tr></tbody></table>
+<p>✔ <strong>Virtual GPU (vGPU)</strong>: Optimize GPU utilization and scale workloads seamlessly.</p>
+<p><img decoding="async" loading="lazy" alt="model-service-create" src="https://1block.ai/assets/images/model-service-create-ca6710ff50620658996d45540240caaf.png" width="3042" height="1372" class="img_ev3q">
+<img decoding="async" loading="lazy" alt="model-service-vram" src="https://1block.ai/assets/images/model-service-vram-d3bd41a1267878ecdc30b222db493a23.png" width="1642" height="1002" class="img_ev3q"></p>
+<p>✔ <strong>GPU Management Interface</strong>: Intuitively view GPU details and monitor resources in real time.</p>
+<p><img decoding="async" loading="lazy" alt="gpu-device" src="https://1block.ai/assets/images/gpu-device-f586f480b657a8f32d87a36efb20ce6d.png" width="3178" height="1470" class="img_ev3q">
+<img decoding="async" loading="lazy" alt="gpu-device-metrics" src="https://1block.ai/assets/images/gpu-device-metrics-224ebee35965b31073dc4728eb1edfde.png" width="3250" height="1700" class="img_ev3q"></p>
+<p>👉 <a href="https://llmos.1block.ai/docs/user_guide/gpu_management/enable-gpu-stack/" target="_blank" rel="noopener noreferrer">Learn More</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-real-time-monitoring-and-alerts"><strong>2. Real-Time Monitoring and Alerts</strong><a href="https://1block.ai/blog/introducing-llmos-v02#2-real-time-monitoring-and-alerts" class="hash-link" aria-label="Direct link to 2-real-time-monitoring-and-alerts" title="Direct link to 2-real-time-monitoring-and-alerts">​</a></h3>
+<p>Enable GPU and cluster monitoring with a single click using preconfigured <strong>Grafana dashboards and Prometheus alerts</strong>. Track performance metrics in real time to ensure stable workload operations.</p>
+<p>✔ <strong>Real-Time Monitoring</strong>: Stay informed about cluster and GPU status.</p>
+<p><img decoding="async" loading="lazy" alt="cluster-gpu-metrics" src="https://1block.ai/assets/images/cluster-gpu-metrics-64fc8320e79a837a9cbf181817de1eea.png" width="3390" height="1696" class="img_ev3q"></p>
+<p>✔ <strong>Intelligent Alerts</strong>: Predefined rules to reduce risks of failures and downtime.</p>
+<p><img decoding="async" loading="lazy" alt="monitoring-rules" src="https://1block.ai/assets/images/monitoring-rules-db1f22e647b71c882ccf6a5c9ae52239.png" width="3146" height="1368" class="img_ev3q"></p>
+<p>✔ <strong>Pause and Resume Workloads</strong>: Release idle resources to enhance efficiency.</p>
+<p><img decoding="async" loading="lazy" alt="workload-actions" src="https://1block.ai/assets/images/workload-actions-bd5794a038a4f51467da36055808e7c7.png" width="3160" height="1072" class="img_ev3q"></p>
+<p>👉 <a href="https://llmos.1block.ai/docs/user_guide/monitoring/monitoring-management/" target="_blank" rel="noopener noreferrer">Learn More</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-key-enhancements"><strong>⚡ Key Enhancements</strong><a href="https://1block.ai/blog/introducing-llmos-v02#-key-enhancements" class="hash-link" aria-label="Direct link to -key-enhancements" title="Direct link to -key-enhancements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-faster-installation-experience"><strong>1. Faster Installation Experience</strong><a href="https://1block.ai/blog/introducing-llmos-v02#1-faster-installation-experience" class="hash-link" aria-label="Direct link to 1-faster-installation-experience" title="Direct link to 1-faster-installation-experience">​</a></h3>
+<ul>
+<li>
+<p>For CN users, you can accelerate installation with <code>--mirror cn</code>.</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken --mirror cn</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>For restricted network and air-gap environments, use configurations like <code>globalSystemImageRegistry</code> or <code>registries</code> to integrate private image registries, accelerating and simplifying the installation process.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-expanded-model-service-sources"><strong>2. Expanded Model Service Sources</strong><a href="https://1block.ai/blog/introducing-llmos-v02#2-expanded-model-service-sources" class="hash-link" aria-label="Direct link to 2-expanded-model-service-sources" title="Direct link to 2-expanded-model-service-sources">​</a></h3>
+<p>Support loading AI models from <a href="https://huggingface.co/models" target="_blank" rel="noopener noreferrer">HuggingFace</a>, <a href="https://modelscope.cn/models" target="_blank" rel="noopener noreferrer">ModelScope</a>, or local paths, offering more flexibility in model deployment for your projects.</p>
+<p><img decoding="async" loading="lazy" alt="model-service-sources" src="https://1block.ai/assets/images/model-service-sources-229b654228aa0d1f85e5dab4d5fbf69d.png" width="3156" height="1126" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-optimized-workload-management"><strong>3. Optimized Workload Management</strong><a href="https://1block.ai/blog/introducing-llmos-v02#3-optimized-workload-management" class="hash-link" aria-label="Direct link to 3-optimized-workload-management" title="Direct link to 3-optimized-workload-management">​</a></h3>
+<ul>
+<li><strong>Automatic Volume Cleanup</strong>: Automatically release storage resources after workload deletion, simplifying management.</li>
+<li><strong>Notebook Optimization</strong>: Added support for Jupyter Pipeline images and i18n localization(e.g., Chinese) patches.
+<img decoding="async" loading="lazy" alt="notebook-pipeline" src="https://1block.ai/assets/images/notebook-pipeline-93b4caa6676b71c23c6ff58aab227a9c.png" width="3838" height="1868" class="img_ev3q"></li>
+<li><strong>Node-Level GPU Metrics Optimization</strong>: Gain detailed overviews of GPU resources to enable fine-grained management.
+<img decoding="async" loading="lazy" alt="node-metrics" src="https://1block.ai/assets/images/node-metrics-ca8e8d7e3e000cd48bd2fa24a704942a.png" width="3182" height="858" class="img_ev3q"></li>
+<li><strong>Enhanced Model Token Metrics</strong>: View real-time model token usage and response speeds to optimize resource planning and task execution of model services.
+<img decoding="async" loading="lazy" alt="token-metrics" src="https://1block.ai/assets/images/token-metrics-e336a79b0cb8fd32967e0007bd12bc0c.png" width="3238" height="1746" class="img_ev3q"></li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-updates-and-fixes"><strong>🛠 Updates and Fixes</strong><a href="https://1block.ai/blog/introducing-llmos-v02#-updates-and-fixes" class="hash-link" aria-label="Direct link to -updates-and-fixes" title="Direct link to -updates-and-fixes">​</a></h2>
+<ul>
+<li><strong>Dependency Updates</strong>: System dependencies have been updated to improve performance, security, and compatibility:<!-- -->
+<ul>
+<li>Rook Ceph and Ceph cluster upgraded to <code>v1.15.7</code>.</li>
+<li>Snapshot Controller upgraded to <code>v8.2.0</code>.</li>
+<li>Upgrade Controller upgraded to <code>v0.14.2</code>.</li>
+</ul>
+</li>
+<li><strong>Key Bug Fixes</strong>:<!-- -->
+<ul>
+<li><strong>Model Service Parameter Issues</strong>: Fixed to allow seamless parameter updates.</li>
+<li><strong>Label Nil Exception</strong>: Custom addon will no longer experience label <code>nil</code> exception.</li>
+<li><strong>User Permission Optimization</strong>: Removed unnecessary node permissions for regular users, enhancing security.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-ready-to-experience"><strong>🌐 Ready to Experience?</strong><a href="https://1block.ai/blog/introducing-llmos-v02#-ready-to-experience" class="hash-link" aria-label="Direct link to -ready-to-experience" title="Direct link to -ready-to-experience">​</a></h2>
+<p>Visit the <a href="https://llmos.1block.ai/docs/" target="_blank" rel="noopener noreferrer">documentation</a> to learn more. Upgrade to LLMOS v0.2 today and experience the future of AI management!</p>
+<p>🚀 <strong>Upgrade Now!</strong></p>]]></content:encoded>
+            <author>guangbo@1block.ai (Guangbo Chen)</author>
+            <category>1Block.AI</category>
+            <category>AI Infrastructure</category>
+        </item>
         <item>
             <title><![CDATA[Introducing LLMOS]]></title>
             <link>https://1block.ai/blog/introducing-llmos</link>
