@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_1_block_ai=self.webpackChunk_1_block_ai||[]).push([[4642],{38286:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/zh/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
