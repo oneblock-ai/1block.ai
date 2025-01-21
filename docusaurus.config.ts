@@ -31,7 +31,15 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh'],
+    localeConfigs: {
+      en: {
+        label: "English",
+      },
+      zh: {
+        label: "简体中文",
+      },
+    }
   },
 
   presets: [
@@ -68,14 +76,20 @@ const config = {
           src: 'img/logo/logo-white.png',
         },
         items: [
-          {
-            href: 'https://llmos.1block.ai/docs',
-            label: 'Docs',
-            position: 'right',
-          },
           {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/llmos-ai/llmos',
+            label: 'GitHub',
+            position: 'right',
+            className: "btn navbar-github",
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+            className: "btn iconLanguage_nlXk",
+          },
+          {
+            href: 'https://llmos.1block.ai/docs/quickstart',
             label: 'Try LLMOS',
             className: 'button button-bordered',
             position: 'right',
