@@ -8,31 +8,38 @@ import Heading from "@theme/Heading";
 import Typing from "@site/src/components/Typing";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import "./home.scss";
+import Translate from '@docusaurus/Translate';
+
 function HomepageHeader() {
   return (
     <header className="hero hero--primary hero-bg hero-banner">
       <div className="container header-container">
         <div className="row">
           <div className="col col--6">
-            <Heading as="h1" className="hero__title">
-              Open-source, Cloud Native AI Infrastructure Platform <Typing />
+            <Heading as="h1" className="hero__title" id="landing-title">
+              <Translate id="home-landing-title">
+                Open source AI Infrastructure & Innovation Platform
+              </Translate> <br></br><Typing />
             </Heading>
             <div className="hero-subtitle home-subtitle">
               <p className="margin-bottom--md">
-                Accelerates AI application development and simplifies the management of large language models (LLMs). Built on open-source technologies like Kubernetes and Ray, it is cloud-agnostic and works with any ML framework.
+                <Translate id="home-landing-description">
+                  Open source AI infrastructure management software designed to accelerate AI application development and simplify the management of large language models (LLMs).
+                </Translate>
               </p>
               <div className="flex items-center">
                 <Link
                   className="button button-bordered button-large button-white"
                   to="https://llmos.1block.ai/docs/quickstart"
+                  id="btn-get-start"
                 >
-                  Get Started
+                  <Translate id="btn-get-started">Get Started</Translate>
                 </Link>
                 <Link
                   className="button button-bordered button-large margin-left--md"
                   to="/contact-us"
                 >
-                  Book a Demo
+                  <Translate id="btn-book-a-demo">Book a Demo</Translate>
                 </Link>
               </div>
             </div>
@@ -52,8 +59,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} - Cloud-Native AI Infra Platform`}
-      description="An Unified Open-Source Cloud-Native AI Infrastructure Platform"
+      title={`${siteConfig.title} - Open source AI Innovation Platform`}
+      description="An Open source Cloud-Native AI Innovation Platform"
     >
       <HomepageHeader/>
       <main>
@@ -61,8 +68,8 @@ export default function Home() {
         <div className="container">
           <div className="row padding--lg">
             <div className="col col--offset-4 col--4">
-              <a className="button button--outline button--primary button--block" href="/contact-us">
-                Talk with us
+              <a className="button button--outline button--primary button--block" href="/contact-us" id="btn-talk-with-us">
+                <Translate id="btn-talk-with-us">Talk with us</Translate>
               </a>
             </div>
           </div>

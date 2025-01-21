@@ -3,36 +3,39 @@ import Slider from "react-slick";
 import { CodeBlock } from 'react-code-blocks';
 import useBaseUrl from "@docusaurus/core/lib/client/exports/useBaseUrl";
 import './feature.scss';
+import Translate from '@docusaurus/Translate';
+import {translate} from '@docusaurus/Translate';
 
 const FeatureList = [
   {
     id: 0,
-    title: 'Easy to Install',
+    title: translate({
+      message: 'Easy to Install',
+      id: 'home-features-title-install'
+    }),
+    description: translate({
+      message: 'Works out of the box on both x86_64 and ARM64 architectures for a smooth installation experience.',
+      id: 'home-features-desc-install'
+    }),
     classVal: "row hero shadow--tl padding--xl margin-top--xl",
-    description: (
-      <>
-        Works out of the box on both x86_64 and ARM64 architectures for a smooth installation experience.
-      </>
-    ),
     code: `## To bootstrap a new cluster
 curl -sfL https://get-llmos.1block.ai | sh -s - --cluster-init --token mytoken
 
 ## To monitor installation logs, run 
 journalctl -u llmos -f
-
-## (Optional) Add a worker node to the cluster
-curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLMOS_TOKEN=mytoken sh -s -
 `,
   },
   {
     id: 1,
-    title: 'Unified Infrastructure, LLM & Application Lifecycle Management',
+    title: translate({
+      message: 'Unified Infrastructure, LLM & Application Lifecycle Management',
+      id: 'home-features-title-mgmt'
+    }),
     classVal: "row hero hero--dark padding-vert--xl padding-horiz--lg margin-vert--lg",
-    description: (
-      <>
-        Offers a unified interface that makes it easy for both developers and non-developers to manage infrastructure, ML clusters, models, and user workloads.
-      </>
-    ),
+    description: translate({
+      message: 'Offers a unified interface that makes it easy for both developers and non-developers to manage infrastructure, ML clusters, models, and user workloads.',
+      id: 'home-features-desc-mgmt'
+    }),
     carousel: {
       items: [
         {
@@ -52,25 +55,29 @@ curl -sfL https://get-llmos.1block.ai | LLMOS_SERVER=https://server-url:6443 LLM
   },
   {
     id: 2,
-    title: 'Cloud-Agnostic & ML Framework-Agnostic',
+    title: translate({
+      message: 'Cloud-Agnostic & ML Framework-Agnostic',
+      id: 'home-features-title-clouds'
+    }),
     classVal: "row hero shadow--lw padding--xl margin-vert--lg",
     Svg: require('@site/static/img/multi-cloud.svg').default,
-    description: (
-      <>
-        Works seamlessly across public clouds and on-premise servers. Compatible with any machine learning framework.
-      </>
-    ),
+    description: translate({
+      message: 'Works seamlessly across public clouds and on-premise servers. Compatible with any machine learning framework.',
+      id: 'home-features-desc-clouds'
+    }),
   },
   {
     id: 3,
-    title: 'Private Deployment, Ideal for Edge & Branch',
+    title: translate({
+      message: 'Private Deployment, Ideal for Edge & Branch',
+      id: 'home-features-title-deployment'
+    }),
     classVal: "row hero hero--primary padding--xl margin-vert--lg",
     Svg: require('@site/static/img/feature_branch.svg').default,
-    description: (
-      <>
-        Supports private deployments with optimized resources for running models and workloads in edge and branch networks. It also allows for horizontal scaling to meet future business needs.
-      </>
-    ),
+    description: translate({
+      message: 'Supports private deployments with optimized resources for running models and workloads in edge and branch networks. It also allows for horizontal scaling to meet future business needs.',
+      id: 'home-features-desc-deployment'
+    }),
   },
 ];
 
@@ -131,7 +138,7 @@ export default function HomepageFeatures() {
     <section className="features-wrapper text-center">
       <div className="container container-lg">
         <h1 className="text--center padding-top--xl">
-          A Full Private Platform. Not Just GPUs
+          <Translate id="home-slogan">Your Private AI Innovation Platform. Not Just GPUs</Translate>
         </h1>
         <div className="container">
           {FeatureList.map((props, idx) => (
